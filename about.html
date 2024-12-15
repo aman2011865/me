@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tintern Abbey - A historical site in Wye Valley.">
+    <title>About Tintern Abbey</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Body Styles */
+        body {
+            background-color: #2c3e50; /* Dark blue background */
+            color: #ecf0f1; /* Light gray text */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1c2c3a; /* Darker blue header */
+            z-index: 1000;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f0c27b; /* Subtle gold */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none; /* Remove underline from the logo */
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 30px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #f0c27b; /* Subtle gold on hover */
+        }
+
+        /* About Section */
+        #about {
+            margin-top: 80px; /* Offset the header */
+            padding: 60px 20px;
+            background-color: #34495e; /* Dark blue-gray background */
+            color: #ecf0f1; /* Light gray text */
+        }
+
+        #about h1 {
+            font-size: 3.5rem;
+            text-align: left; /* Align header to the left */
+            margin-bottom: 40px;
+            color: #f0c27b; /* Gold for headings */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .about-text, .about-image {
+            flex: 1; /* Equal width for text and image */
+            background-color: #2c3e50; /* Same background as body */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            font-size: 1.2rem;
+            color: #bdc3c7; /* Lighter text for content */
+            line-height: 1.6;
+            overflow-y: auto;
+        }
+
+        .about-image {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1c2c3a; /* Dark blue footer */
+            color: #ecf0f1; /* Light gray text for footer */
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f0c27b; /* Gold link color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar nav ul li {
+                margin: 15px 0;
+            }
+
+            #about .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-text, .about-image {
+                flex: 1 100%;
+                margin-bottom: 20px;
+            }
+
+            #about h1 {
+                font-size: 2.5rem;
+                text-align: center; /* Center the heading for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Tintern Abbey</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="creator.html">Creator</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>Journal Entry: A Visit to Wye Valley Tintern Abbey</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        The journey to Wye Valley Tintern Abbey was a step into history, as I followed the winding roads through the lush landscape of the Wye Valley, a designated Area of Outstanding Natural Beauty. When I first caught sight of the Abbey, it rose dramatically from the surrounding greenery—a majestic ruin set against the backdrop of hills and the winding River Wye below. The Abbey, with its ancient stones and haunting beauty, seemed to whisper the stories of centuries.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="abbey1.jpg" alt="Tintern Abbey Image 1">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Built in 1131, Tintern Abbey was once a thriving center of monastic life, but today it stands in evocative ruins, with its towering arches and high, vaulted windows open to the sky. There’s a solemnity to the place that is almost palpable. As I approached the entrance, I could feel the history pressing in on me, as if the Abbey itself was both a relic and a living witness to the passage of time.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="abbey2.jpg" alt="Tintern Abbey Image 2">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Inside, the silence was profound, broken only by the occasional rustle of leaves or the distant call of a bird. Nature has slowly reclaimed the space. Vines climb the walls, and wildflowers grow in the stone floors where monks once walked. The Abbey’s magnificent arches, though incomplete, still frame the sky in a way that feels like looking through a window to another time. The sunlight filtered through the gaps in the stone, casting dappled patterns on the ground, while the green hills surrounding the Abbey stretched out in every direction, peaceful and unchanging.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="abbey3.jpg" alt="Tintern Abbey Image 3">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Walking through the ruins, I felt a deep sense of reverence. The nave, once a place of prayer and worship, is now open to the elements, its soaring arches a silent testament to the craftsmanship of those who built it. The beauty of the place isn’t just in its architecture, but in the way it has been absorbed into the landscape, harmonizing with the natural surroundings. It’s a place where time seems to have paused, where the past and present coexist in quiet balance.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="abbey4.jpg" alt="Tintern Abbey Image 4">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As I sat for a moment on one of the fallen stones, I couldn’t help but reflect on the Abbey’s enduring presence. Despite the erosion of centuries, the spirit of Tintern Abbey still lingers in the wind, the stone, and the very air around it. It’s a powerful reminder of the passage of time, and the enduring beauty of what remains. Leaving the Abbey, I felt a quiet peace, knowing that, in some way, Tintern Abbey will always be a part of this timeless valley.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="abbey5.jpg" alt="Tintern Abbey Image 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tintern Abbey. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Designer">
+    <title>Contact Me</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Body Styles */
+        body {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1c2c3a;
+            z-index: 1000;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f0c27b;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 30px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #f0c27b;
+        }
+
+        /* Contact Section */
+        #contact {
+            margin-top: 80px;
+            padding: 60px 20px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+        }
+
+        #contact h1 {
+            font-size: 3.5rem;
+            margin-bottom: 40px;
+            color: #f0c27b;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #bdc3c7;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-buttons a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #f0c27b;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-buttons a:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #1c2c3a;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f0c27b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar nav ul li {
+                margin: 15px 0;
+            }
+
+            #contact h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-info {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Tintern Abbey</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Journal</a></li>
+                    <li><a href="creator.html">Creator</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <p>If you'd like to get in touch with me for web design services or any queries, feel free to contact me using the details below:</p>
+            <p><strong>Whatsapp:</strong> <a href="https://wa.me/917044852009">+91 70448 52009</p>
+            <p><strong>Email:</strong> <a href="mailto:amandeepstudy7@gmail.com">amandeepstudy7@gmail.com</a></p>
+        </div>
+
+        <div class="contact-buttons">
+            <!-- Call button --> 
+            <a href="https://wa.me/917044852009">Whatsapp Me</a>
+            <!-- Email button -->
+            <a href="mailto:your.email@example.com">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tintern Abbey. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
